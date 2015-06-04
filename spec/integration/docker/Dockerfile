@@ -1,0 +1,8 @@
+FROM mysql:5.7.7
+
+ENV MYSQL_DATABASE testdb
+ENV MYSQL_USER logstash
+ENV MYSQL_PASSWORD logstash
+ENV MYSQL_ROOT_PASSWORD password 
+
+CMD ["mysqld"]
